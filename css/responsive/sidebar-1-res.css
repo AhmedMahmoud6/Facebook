@@ -1,0 +1,33 @@
+/* Mobile */
+
+@media (max-width: 767px) {
+    .aside-1 {
+        width: 0;
+        display: none;
+    }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .aside-1 li {
+        font-size: 11px;
+    }
+
+    .aside-1 p {
+        font-size: 15px;
+    }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {}
+
+/* Custom */
+
+@media (max-width: 1199px) {}

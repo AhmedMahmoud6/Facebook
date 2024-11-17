@@ -72,7 +72,8 @@ nav {
 .sec-2 .home,
 .sec-2 .video,
 .sec-2 .marketplace,
-.sec-2 .groups {
+.sec-2 .groups,
+.sec-2 .menu-more {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -80,6 +81,10 @@ nav {
     width: calc(90% / 4);
     border-radius: 10px;
     position: relative;
+}
+
+.sec-2 .menu-more {
+    display: none;
 }
 
 .sec-2 div:hover:not(.home) {

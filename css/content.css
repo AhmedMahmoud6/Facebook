@@ -60,12 +60,14 @@ section {
 
 .s2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
 }
 
 .s2 div {
     padding: 5px 17px;
     border-radius: 10px;
+    width: calc(95% / 3);
 }
 
 .s2 div:hover {
@@ -75,6 +77,8 @@ section {
 .s2 p {
     color: #b4b6bb;
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .flex {
@@ -171,9 +175,12 @@ section {
     background-image: url(../assets/images/osama.jpg);
 }
 
-.stories-container div:nth-child(5) span {
+.stories-container div:nth-child(5) span,
+.stories-container div:nth-child(6) span,
+.stories-container div:nth-child(7) span {
     background-image: url(../assets/images/clash-royale-pfp.jpg);
 }
+
 
 /*  */
 .stories-container div::after {

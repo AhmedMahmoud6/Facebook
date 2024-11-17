@@ -1,0 +1,51 @@
+/* Mobile */
+
+@media (max-width: 767px) {
+    .your-mind {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 10px;
+        border-radius: 0;
+    }
+
+    .s1 div {
+        font-size: 14px;
+    }
+
+    .s2 {
+        width: 100%;
+
+    }
+
+    .s2 div {
+        width: calc(90% / 3);
+        text-wrap: wrap;
+        padding: 5px 0px;
+    }
+
+    .stories {
+        width: 100%;
+    }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .your-mind,
+    .stories {
+        width: 50%;
+    }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {}
+
+/* Custom */
+
+@media (max-width: 1199px) {}
