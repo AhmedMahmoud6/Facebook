@@ -1,0 +1,128 @@
+.aside-2 {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    padding-right: 10px;
+}
+
+.aside-2>p,
+.cont p {
+    color: #b0b3b8;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.aside-2 hr {
+    border: 1px solid #65686c;
+    margin-top: 5px;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont p:last-child {
+    color: #5aa7ff;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.cont p:last-child:hover {
+    background-color: #333334;
+}
+
+.request {
+    height: 110px;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.request:hover {
+    background-color: #3a3a3a;
+}
+
+.request>img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.parent {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info p {
+    color: white;
+}
+
+.info .date {
+    color: #9fa1a5;
+}
+
+.mutual-friends {
+    display: flex;
+    align-items: center;
+}
+
+.mutual-friends>p {
+    color: #b0b3b8;
+}
+
+.mutual-friends img {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.mutual-friends img:first-of-type {
+    z-index: 1;
+    box-shadow: 1px 0 2px 1px black;
+}
+
+.mutual-friends img:last-of-type {
+    transform: translateX(-5px);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons div {
+    color: white;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.buttons div:first-child {
+    background-color: #0866ff;
+}
+
+.buttons div:first-child:hover {
+    background-color: #2176ff;
+}
+
+.buttons div:last-child {
+    background-color: #333334;
+}
+
+.buttons div:last-child:hover {
+    background-color: #484848;
+}

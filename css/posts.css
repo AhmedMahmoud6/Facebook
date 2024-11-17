@@ -1,0 +1,137 @@
+.post {
+    width: 500px;
+    padding: 20px;
+    padding-bottom: 10px;
+    background-color: #252728;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post .hovered-text:hover {
+    text-decoration: underline;
+}
+
+.post-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.post-photo-div {
+    width: 40px;
+    height: 40px;
+}
+
+.post-photo-div img {
+    border-radius: 50%;
+}
+
+.post-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.post-top-container {
+    width: 100%;
+}
+
+.verified {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.verified img {
+    width: 16px;
+    height: 16px;
+}
+
+.post-top-container h3 {
+    color: #ced1d5;
+}
+
+.time {
+    display: flex;
+    color: #9b9ea3;
+    gap: 5px;
+    width: 187px;
+}
+
+
+.more {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.more:hover {
+    background-color: #3b3d3e;
+}
+
+.post-body {
+    color: #ced1d5;
+    direction: rtl;
+    font-weight: 500;
+}
+
+.post-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reach {
+    display: flex;
+    gap: 5px;
+    color: #b0b3b8;
+    align-items: center;
+}
+
+.reach p {
+    font-size: 16px;
+}
+
+.reactions {
+    display: flex;
+}
+
+.details {
+    display: flex;
+    gap: 10px;
+    color: #b0b3b8;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like,
+.comment,
+.send,
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a5a8ab;
+    font-weight: bold;
+    gap: 10px;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+.actions div:hover {
+    background-color: #3b3d3e;
+}

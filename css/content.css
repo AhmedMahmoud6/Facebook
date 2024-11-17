@@ -1,0 +1,196 @@
+.hovered {
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.your-mind {
+    width: 500px;
+    height: 125px;
+    background-color: #252728;
+    margin-top: 30px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 15px;
+}
+
+.your-mind hr {
+    border: 1px solid #65686c;
+}
+
+.s1 {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.s1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.s1 div {
+    background-color: #333334;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #b4b6bb;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.s1 div:hover {
+    background-color: #484849;
+}
+
+.s2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.s2 div {
+    padding: 5px 17px;
+    border-radius: 10px;
+}
+
+.s2 div:hover {
+    background-color: #3b3d3e;
+}
+
+.s2 p {
+    color: #b4b6bb;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.stories {
+    width: 500px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.stories-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.stories::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-image: url("../assets/images/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #3b3c3e;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.stories-container div {
+    width: 112px;
+    height: 200px;
+    background-color: #212324;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+
+.plus-icon {
+    background-image: url("../assets/images/add-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #075ce5;
+    border-radius: 50%;
+    padding: 15px;
+    border: 3px solid #212324;
+}
+
+
+.stories div img {
+    object-fit: cover;
+}
+
+.stories-container div:not(.create-story) img {
+    width: 112px;
+    border-radius: 10px;
+}
+
+
+.stories-container div:not(.create-story) span {
+    position: absolute;
+    padding: 17px;
+    border-radius: 50%;
+    border: 3px solid #075ce5;
+    left: 10px;
+    top: 10px;
+}
+
+.stories-container div:nth-child(2) span {
+    background-image: url(../assets/images/yaya-icon.jpg);
+}
+
+.stories-container div:nth-child(3) span {
+    background-image: url(../assets/images/farouk-pfp.jpg);
+}
+
+.stories-container div:nth-child(4) span {
+    background-image: url(../assets/images/osama.jpg);
+}
+
+.stories-container div:nth-child(5) span {
+    background-image: url(../assets/images/clash-royale-pfp.jpg);
+}
+
+/*  */
+.stories-container div::after {
+    content: attr(story-text);
+    position: absolute;
+    color: white;
+    width: 100%;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    text-align: center;
+}
+
+.stories-container .create-story img {
+    width: 112px;
+    height: 70%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
