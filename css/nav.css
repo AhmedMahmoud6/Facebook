@@ -3,8 +3,9 @@ nav {
     height: 50px;
     background-color: #252728;
     border: 1px solid rgba(128, 128, 128, 0.217);
-    position: sticky;
+    position: fixed;
     top: 0;
+    z-index: 10;
 }
 
 .nav-sections {
